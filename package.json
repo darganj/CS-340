@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "database web app",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "jared",
+  "license": "ISC"
+  "dependencies": {
+	"body-parser": "^1.13.3",
+	"express": "^4.13.2",
+	"express-handlebars": "^2.0.1",
+	"mysql": "^2.8.0"
+	}
+}

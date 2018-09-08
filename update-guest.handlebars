@@ -1,0 +1,8 @@
+<h1>Update {{Name}}:</h1>
+<form id="update-guest" action="/guests" method="post">
+	Name: <input type="text" name="Name" value="{{Name}}"><br>
+	Brithdate: <input type="text" name="Birthdate" value="{{Birthdate}}"><br>
+	Height: <input type="number" name="{{Height}}">
+</form>	
+<button onclick="updateGuest({{Id}})">Update</button>
+

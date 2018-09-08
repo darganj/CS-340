@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search for Guests by Rides</title>
+
+	<meta charset="utf-8">
+
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<style>
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+body {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+</style>
+
+	<div class="menu">
+		<ul>
+			<li><a class="active" href="Home_DB.html">Search</a></li>
+			<li><a href="FP_Manage.html">Manage Fast Passes</a></li>
+			<li><a href="Add_Guest.html">Add Guests</a></li>
+		</ul>
+	</div>	
+
+
+<h1>Disney Parks Information</h1>
+<h2>Search for Guests by Rides</h2>
+<form class="form-horizontal ride">
+	<input id="name" class="col-sm-10" type="text">
+	<button class="search btn btn-submit">Search</button>
+</form>
+<br>
+<h3>Examples include: </h3><br>
+<ul>
+	<li>Space Mountain</li>
+	<li>Splash Mountain</li>
+	<li>Small World</li>
+	<li>Test Track</li>
+</ul>
+
+<h3>Search Results:</h3>
+<ul class="search_results"></ul>
+<div id="guest_id"></div>
+<div id="guest_name"></div>
+<div id="guest_age"></div>
+<div id="guest_height"></div>
+<div id="guest_FPID"></div>
+<div id="ride_id"></div>
+<div id="ride_name"></div>
+<div id="ride_time"></div>
+<div id="ride_requirements"></div>
+
+</body>
+</html>

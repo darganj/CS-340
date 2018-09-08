@@ -1,0 +1,32 @@
+<h1>Current Guests:</h1>
+
+<table>
+	<thead>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Birthdate</th>
+		<th>Height</th>
+		<th>Ride</th>
+	</thead>
+	<tbody>
+		{{#each guests}}
+		<tr>
+			<td>{{Id}}</td>
+			<td>{{Name}}</td>
+			<td>{{Birthdate}}</td>
+			<td>{{Height}}</td>
+			<td>{{Ride}}</td>
+			<td><button onclick="deleteGuest({{Id}})">Delete</button></td>
+			<td><a href="/guests/{{Id}}">Update</a></td>
+		</tr>
+		{{/each}}
+	</tbody><br>
+</table>
+<br>
+<h3>Add new Guest:</h3>
+	<form id="addGuest" action="/guests" method="post">
+		Name: <input type="text" name="name"><br>
+		Birthdate: <input type="text" name="birthdate"><br>
+		Height: <input type="number" name="height"><br>
+		<input type="submit" value="Submit">
+	</form>
